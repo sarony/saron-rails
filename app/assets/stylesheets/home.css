@@ -1,0 +1,111 @@
+body {
+  width: 99%;
+  margin: 100px auto;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+  padding: 0;
+  width: 70%;
+/*  position: absolute;*/
+}
+
+h1.header {
+  font-family: "Rock Salt", sans-serif; 
+  font-size: 3em;
+  color: #f95902;
+  float: left;
+  width: 20%;
+  float: left;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  line-height: 1em;
+}
+
+nav ul {
+  float: right;
+  width: 70%;
+  margin: 0;
+  height: 100%;
+}
+
+nav ul li {
+  float: right;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ab9487;
+  font-family: "Annie Use Your Telescope", "sans-serif"
+}
+
+p {
+  font-family: "Annie Use Your Telescope", sans-serif;
+  font-weight: 200;
+  font-size: 1.4em;
+  color: #89756a;
+  line-height: 1.5em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 70%;
+  margin: auto;
+}
+
+footer {
+  margin: auto;
+  border-top: 1px solid #eee;
+  width: 70%;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 30px 30px 30px 0px;
+  color: #ab9487;
+  font-family: "Annie Use Your Telescope", "sans-serif";
+}
+
+footer ul li:hover, nav ul li:hover {
+  color: #f95902;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+
+/*.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }*/
+/* start commented backslash hack \*/
+/** html .clearfix { height: 1%; }
+.clearfix { display: block; }*/
+/* close commented backslash hack */
+
+/*body {
+  margin: 120px 200px;
+  width: 90%;
+  background: #febf6d;
+
+    background-image: -o-linear-gradient(bottom, rgb(255, 255, 255) 24%, rgb(0, 0, 0) 62%);
+  background-image: -ms-linear-gradient(bottom , ellipse farthest-corner, #febf6d 0%, #f4ceb3 100%);
+  background-image: -moz-linear-gradient(bottom , ellipse farthest-corner, #febf6d 0%, #f4ceb3 100%);
+  background-image: -o-linear-gradient(bottom , ellipse farthest-corner, #febf6d 0%, #f4ceb3 100%);
+  background-image: -webkit-gradient(linear, bottom , 0, bottom , 553, color-stop(0, #febf6d), color-stop(1, #f4ceb3));
+  background-image: -webkit-linear-gradient(bottom , ellipse farthest-corner, #febf6d 0%, #f4ceb3 100%);
+  background-image: linear-gradient(ellipse farthest-corner at bottom , #febf6d 0%, #f4ceb3 100%);
+  background-repeat: no-repeat;
+}*/
