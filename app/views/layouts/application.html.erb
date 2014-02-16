@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title> Saron </title>
     <link rel="stylesheet" href="/css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
@@ -8,13 +8,29 @@
     <link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="/"><h1 class="header">saron</h1></a>
+        <ul>
+          <a href="/projects"><li>Projects</li></a>
+          <li>Code</li>
+          <li>Illustrations</li>
+          <li>Thoughts</li>
+          <li>Errythang</li>
+        </ul>
+      </nav>
+  <%= yield %>
+      <footer>
+        <ul>
+          <a href="http://twitter.com/saronyitbarek" target="_blank"><li>Twitter</li></a>
+          <a href="http://github.com/sarony" target="_blank"><li>Github</li></a>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>

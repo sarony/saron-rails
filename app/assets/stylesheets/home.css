@@ -3,13 +3,33 @@ body {
   margin: 100px auto;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f95902;
+  text-decoration: none;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
 nav {
   width: 100%;
   height: 50px;
   margin: 10px auto;
   padding: 0;
-  width: 70%;
+
 /*  position: absolute;*/
+}
+
+h2 {
+  font-family: "Annie Use Your Telescope", sans-serif;
+  color: #89756a;
 }
 
 h1.header {
@@ -27,7 +47,6 @@ h1.header {
 
 nav ul {
   float: right;
-  width: 70%;
   margin: 0;
   height: 100%;
 }
@@ -49,14 +68,12 @@ p {
   line-height: 1.5em;
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 70%;
   margin: auto;
 }
 
 footer {
   margin: auto;
   border-top: 1px solid #eee;
-  width: 70%;
 }
 
 footer ul {

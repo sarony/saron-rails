@@ -1,0 +1,30 @@
+// Place all the styles related to the project controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.projects {
+  margin-top: 50px;
+}
+
+.projects p, .projects h2 {
+  font-family: "Pontano Sans";
+}
+
+.projects p {
+  font-size: 1.2em;
+  padding: 0;
+}
+
+.projects h2 {
+  color: #453b35;
+}
+
+.projects section {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
+
+.projects section:last-child {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
