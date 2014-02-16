@@ -1,8 +1,8 @@
 class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
-      t.string :title
-      t.string :preview
+      t.text :title
+      t.text :preview
 
       t.timestamps
     end

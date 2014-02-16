@@ -13,7 +13,16 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def show
+    set_post
+    
+  end
+
   private
+
+  def set_post
+    @post = Post.where(:id => params[:id]).first
+  end
 
   def post_params
     params.require(:post).permit(:title, :preview, :body)

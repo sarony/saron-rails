@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20140216005717) do
   enable_extension "plpgsql"
 
   create_table "posts", force: true do |t|
-    t.string   "title"
-    t.string   "preview"
+    t.text     "title"
+    t.text     "preview"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "body"
+    t.text     "body"
   end
 
 end
