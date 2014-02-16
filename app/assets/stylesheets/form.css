@@ -13,6 +13,7 @@ input, textarea {
 
 input:active, input:focus, textarea:active, textarea:focus {
   outline: none;
+  border: 1px solid #f95902;
 }
 
 form {
