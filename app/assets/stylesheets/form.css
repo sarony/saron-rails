@@ -20,7 +20,11 @@ form {
 }
 
 textarea {
-  height: 200px;
+  height: 100px;
   width: 100%;
+}
 
+textarea.post_body {
+  height: 500px;
+  width: 100%;
 }
