@@ -34,6 +34,10 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def code
+    @posts = Post.where(:post_type => "code")
+  end
+
   private
 
   def set_post
