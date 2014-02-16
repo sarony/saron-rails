@@ -38,6 +38,14 @@ class PostsController < ApplicationController
     @posts = Post.where(:post_type => "code")
   end
 
+  def thoughts
+    @posts = Post.where(:post_type => "thoughts")
+  end
+
+  def illustrations
+    @posts = Post.where(:post_type => "illustrations")
+  end
+
   private
 
   def set_post

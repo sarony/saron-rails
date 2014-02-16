@@ -8,11 +8,16 @@ SaronRails::Application.routes.draw do
   get '/posts/new' => "posts#new", as: "new_post"
   get '/posts' => "posts#index", as: "posts"
   post '/posts' => "posts#create"
+  
   get '/posts/code' => "posts#code"
+  get '/posts/thoughts' => "posts#thoughts"
+  get '/posts/illustrations' => "posts#illustrations"
+  
   get '/posts/:id' => "posts#show", as: "post"
   delete '/posts/:id' => "posts#destroy"
   get '/posts/:id/edit' => "posts#edit", as: "edit_post"
   patch '/posts/:id' => "posts#update"
+
 
   # get '/blogpost' => "blogpost#new", as: new_blogpost
   # get '/illustration' => "blogpost#new", as: new_blogpost
