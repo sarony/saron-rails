@@ -17,6 +17,16 @@ class PostsController < ApplicationController
     set_post
   end
 
+  def edit
+    set_post
+  end
+
+  def update
+    set_post
+    @post.update(post_params)
+    redirect_to post_path
+  end
+
   def destroy
     set_post
     @post.destroy
