@@ -6,6 +6,7 @@ SaronRails::Application.routes.draw do
   get '/posts/new' => "posts#new", as: "new_post"
   get '/posts' => "posts#index", as: "posts"
   post '/posts' => "posts#create"
+  get '/posts/:id' => "posts#show", as: "post"
   # get '/blogpost' => "blogpost#new", as: new_blogpost
   # get '/illustration' => "blogpost#new", as: new_blogpost
 

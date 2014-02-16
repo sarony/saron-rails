@@ -21,15 +21,17 @@ a:hover {
 nav {
   width: 100%;
   height: 50px;
-  margin: 10px auto;
-  padding: 0;
-
+  margin: 10px auto 50px auto;
+  padding: 0 0 80px 0;
+  border-bottom: 1px solid #eee;
 /*  position: absolute;*/
 }
 
 h2 {
   font-family: "Annie Use Your Telescope", sans-serif;
-  color: #89756a;
+/*  color: #89756a;
+*/  color: #453b35;
+  font-size: 2em;
 }
 
 h1.header {
@@ -66,13 +68,12 @@ p {
   font-size: 1.4em;
   color: #89756a;
   line-height: 1.5em;
-  padding-top: 30px;
   padding-bottom: 30px;
   margin: auto;
 }
 
 footer {
-  margin: auto;
+  margin: 30px auto auto auto;
   border-top: 1px solid #eee;
 }
 
