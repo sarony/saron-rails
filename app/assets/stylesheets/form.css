@@ -1,0 +1,26 @@
+input[type="submit"] {
+  box-shadow: none;
+  border: none;
+  background: #f95902;
+  color: white;
+}
+
+input, textarea {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input:active, input:focus, textarea:active, textarea:focus {
+  outline: none;
+}
+
+form {
+  padding: 30px 0;
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+
+}
