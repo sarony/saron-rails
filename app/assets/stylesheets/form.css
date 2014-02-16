@@ -9,6 +9,8 @@ input, textarea {
   padding: 10px 20px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
+  font-size: 1.3em;
+  font-family: "Pontano Sans", "sans-serif";
 }
 
 input:active, input:focus, textarea:active, textarea:focus {

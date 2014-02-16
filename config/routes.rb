@@ -3,9 +3,9 @@ SaronRails::Application.routes.draw do
   get '/' => "home#index"
   get '/projects' => "projects#index"
   get '/admin' => "admin#index"
-  get '/all' => "home#all"
   get '/posts/new' => "posts#new", as: "new_post"
   get '/posts' => "posts#index", as: "posts"
+  post '/posts' => "posts#create"
   # get '/blogpost' => "blogpost#new", as: new_blogpost
   # get '/illustration' => "blogpost#new", as: new_blogpost
 
