@@ -3,7 +3,7 @@ SaronRails::Application.routes.draw do
   get '/' => "home#index"
   get '/projects' => "projects#index"
 
-  get '/admin' => "admin#index"
+  get '/login' => "login#index"
   
   get '/posts/new' => "posts#new", as: "new_post"
   get '/posts' => "posts#index", as: "posts"
@@ -12,7 +12,7 @@ SaronRails::Application.routes.draw do
   get '/posts/code' => "posts#code"
   get '/posts/thoughts' => "posts#thoughts"
   get '/posts/illustrations' => "posts#illustrations"
-  
+
   get '/posts/:id' => "posts#show", as: "post"
   delete '/posts/:id' => "posts#destroy"
   get '/posts/:id/edit' => "posts#edit", as: "edit_post"
