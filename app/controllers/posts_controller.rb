@@ -15,7 +15,12 @@ class PostsController < ApplicationController
 
   def show
     set_post
-    
+  end
+
+  def destroy
+    set_post
+    @post.destroy
+    redirect_to posts_path
   end
 
   private

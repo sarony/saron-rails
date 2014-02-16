@@ -3,4 +3,6 @@
 <div class="posts">
   <h2><%= @post.title %></h2>
   <p><%= raw markdown.render(@post.body) unless @post.body.nil? %></p>
+  </br>
+  <%= link_to "Delete", post_path(@post), :method => :delete, data: {confirm: "You sure?" } %>
 </div>
