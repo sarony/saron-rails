@@ -6,5 +6,8 @@ class HomeController < ApplicationController
   def all
     @posts = Post.all
   end
+
+  def about
+  end
   
 end

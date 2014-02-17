@@ -20,6 +20,8 @@ SaronRails::Application.routes.draw do
   get '/posts/:id/edit' => "posts#edit", as: "edit_post"
   patch '/posts/:id' => "posts#update"
 
+  get '/about' => "home#about"
+
 
   # get '/blogpost' => "blogpost#new", as: new_blogpost
   # get '/illustration' => "blogpost#new", as: new_blogpost
