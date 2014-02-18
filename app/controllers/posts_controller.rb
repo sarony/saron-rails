@@ -36,7 +36,8 @@ class PostsController < ApplicationController
   end
 
   def code
-    @posts = Post.where(:post_type => "code")
+    # TODO: fix these filters
+    @posts = PostsPostType.where(:post_type_id => 1)
   end
 
   def thoughts
