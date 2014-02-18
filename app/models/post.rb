@@ -1,3 +1,3 @@
 class Post < ActiveRecord::Base
-  belongs_to :post_type
+  has_many :post_types
 end
