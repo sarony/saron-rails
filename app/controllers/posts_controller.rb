@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    layout: 'false'
+    # layout: 'false'
     @post = Post.new
     @post_types = PostType.all
   end
