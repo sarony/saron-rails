@@ -10,6 +10,12 @@ group :production, :staging, :development, :test do
   gem 'pg'
 end
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

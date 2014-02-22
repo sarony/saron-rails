@@ -1,7 +1,7 @@
 SaronRails::Application.routes.draw do
   resources :sessions
 
-  get '/' => "home#index"
+  get '/' => "home#index", as: "home"
   get '/projects' => "projects#index"
 
   get '/login' => "sessions#new"
