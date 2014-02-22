@@ -1,9 +1,7 @@
- <% @posts.each do |post| %>
+<% @posts.each do |post| %>
   <div class="post">
-    <% if post.post_type == "illustration"%>
     <h2><%= post.title %></h2>
     <p><%= raw markdown.render(post.preview) unless post.preview.nil? %></p>
     <%= link_to "continue", post %>
-    <% end %>
   </div>
-  <% end %>
+<% end %>

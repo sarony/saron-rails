@@ -1,3 +1,5 @@
+require 'pry'
+
 class PostsController < ApplicationController
 
 skip_before_action :authorize, :except => [:new, :edit, :update, :destroy]
@@ -7,7 +9,6 @@ skip_before_action :authorize, :except => [:new, :edit, :update, :destroy]
   end
 
   def new
-    # layout: 'false'
     @post = Post.new
     @post_types = PostType.all
   end
@@ -39,15 +40,18 @@ skip_before_action :authorize, :except => [:new, :edit, :update, :destroy]
 
   def code
     # TODO: fix these filters
-    @posts = PostsPostType.where(:post_type_id => 1)
+    @postsposttypes = PostsPostType.where(:post_type_id => 2)
+    @posts = @postsposttypes.collect{|ppt| ppt.post }
   end
 
   def thoughts
-    @posts = Post.where(:post_type => "thoughts")
+    @postsposttypes = PostsPostType.where(:post_type_id => 3)
+    @posts = @postsposttypes.collect{|ppt| ppt.post }
   end
 
   def illustrations
-    @posts = Post.where(:post_type => "illustrations")
+    @postsposttypes = PostsPostType.where(:post_type_id => 1)
+    @posts = @postsposttypes.collect{|ppt| ppt.post }
   end
 
   private
