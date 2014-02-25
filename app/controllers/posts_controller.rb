@@ -15,6 +15,8 @@ skip_before_action :authorize, :except => [:new, :edit, :update, :destroy]
 
   def create
     @post = Post.create(post_params)
+    PostsPostType.create(:post => @post, :post_type_id => params[:post_type_id])
+    binding.pry
     redirect_to posts_path
   end
 

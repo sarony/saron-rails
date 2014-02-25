@@ -1,6 +1,6 @@
 <%= form_for(@post) do |f| %>
   <%= f.text_field :title, :placeholder => "title" %> <% @post_types.each do |post_type| %>
-    <input id="post[post_type]" name="post[post_type_id]" type="checkbox" value=<%= post_type.id %>></input>
+    <input id="post_type_id" name="post_type_id" type="checkbox" value=<%= post_type.id %>></input>
     <%= post_type.name %>
   <% end %><br>
   <%= f.text_area :preview, :placeholder => "preview" %></br>
